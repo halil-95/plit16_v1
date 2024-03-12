@@ -1,1 +1,83 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{box-sizing:border-box}:root{--desktop:1200px}.container{display:flex;width:1200px;display:block;margin:5px auto;padding:50px}.container__list{flex-basis:100%}.flex-row,.flex-column{display:flex;justify-content:center;align-items:center}.flex-column{flex-direction:column}div,.header{border:2px solid #fff}h1,h2,h3,h4,h5,h6,a,li,button{font-family:"goodPro";font-style:normal}.title{text-align:center;text-transform:uppercase;margin-bottom:30px}h2{display:block;font-size:1.5em;font-weight:bold}ul li{list-style:none}button{margin:0;padding:0 20px;cursor:pointer;display:inline-block;position:relative;overflow:hidden;z-index:1;background:transparent;color:inherit;height:40px}button:hover{color:#f00}a{text-decoration:none;color:inherit}.header_bg{background-position:center;background-repeat:no-repeat;background-size:cover;height:500px;position:absolute;top:0;left:0;width:100%;z-index:-1}.block_header__left{flex-basis:50%}.block_header__right{flex-basis:50%}.header{font-family:"goodPro";font-style:normal;font-weight:900;gap:5px;color:#fff;padding:50px 0}.header__logo{justify-content:center;flex-basis:60%}.header__logo svg{width:300px;height:auto;fill:#fff}.header__logo svg path{fill:#fff}.header__address{flex-basis:40%;font-family:"goodPro";font-size:1.2em;font-style:normal;font-weight:500;line-height:1.4em}.header__phone{flex-basis:40%;line-height:1.5em;font-size:1.4em}.header__phone ul li:before{font-family:"fontello";content:"\eee2";margin:0 15px 0 0}.header__callback{flex-basis:60%}.callback__price{background:#df3040}.header__callback{gap:5px}@media screen and (max-width:1200px){.header{display:flex;align-items:flex-start}.block_header__left{flex-direction:column;gap:5px;justify-content:center;align-items:flex-start;padding:0 30px}.block_header__right{flex-direction:column;justify-content:center;align-items:flex-end;gap:47px;padding:0 30px}}@media screen and (max-width:860px){.header{align-items:flex-start;justify-content:center}.block_header__left{flex-basis:100%}.block_header__right{flex-basis:100%}}@media screen and (max-width:768px){.header{flex-direction:column}.header__callback{flex-direction:column}}
+/* root */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --desktop: 1200px;
+}
+.container {
+  display: flex;
+  max-width: 1200px;
+  display: block;
+  margin: 5px auto;
+  padding: 50px;
+}
+.container__list {
+  flex-basis: 100%;
+}
+.flex-row,
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+div,
+.header {
+  border: 2px solid #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+button {
+  font-family: "goodPro";
+  font-style: normal;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+ul li {
+  list-style: none;
+}
+button {
+  margin: 0px;
+  padding: 0px 20px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 2px;
+  background: transparent;
+  color: inherit;
+  height: 40px;
+  font-size: 1em;
+  border: unset;
+}
+button:hover {
+  color: #f00;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* part */
+.herous {
+  border: 5px solid #f00;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
