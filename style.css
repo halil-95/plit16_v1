@@ -303,6 +303,12 @@ form {
   background: #fff;
   font-size: 1em;
   padding: 0 20px;
+  transition: color 0.5s, background 0.5s;
+}
+.form__button .button:hover {
+  background: #df3040;
+  color: #fff;
+  border: transparent;
 }
 @media screen and (max-width: 860px) {
   .herous {
@@ -322,9 +328,7 @@ form {
   }
 }
 @media screen and (max-width: 300px) {
-  .hero__text > h1 {
-    font-size: 1em;
-  }
+  .hero__text > h1,
   .herous__right > h2 {
     font-size: 1em;
   }
