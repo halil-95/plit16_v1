@@ -173,12 +173,10 @@ h1 {
 h2 {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin: 30px auto;
   font-weight: bold;
   font-size: 1.5em;
-}
-h2 {
-  display: block;
+  line-height: 1.5em;
 }
 ul {
   all: unset;
@@ -219,117 +217,79 @@ input {
   height: 50px;
 }
 /* part */
-.herous__block .container {
-  padding: unset;
-}
-.herous,
-.herous__right,
-.herous__left,
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.herous {
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-family: "goodPro";
-  display: flex;
-  align-items: stretch;
-  color: #fff;
-}
-.herous__left {
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-grow: 3;
-  flex-basis: 100%;
-  padding: 50px;
-  background: #119ff7;
-}
-.hero__text > h1 {
-  font-size: 3em;
-  line-height: 1em;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-.hero__subscribe > p {
-  font-size: 1em;
-  font-size: 1em;
-  line-height: 1.5em;
-  font-weight: 500;
-}
-.herous__right {
-  background: #0789d9;
-  padding: 50px;
-  flex-grow: 5;
-  text-align: center;
-}
-.herous__form {
+.offer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 5px;
 }
-.herous__form h2 {
-  line-height: 1.4em;
+.offer__portfolio {
+  display: flex;
+  flex-direction: column;
 }
-.herous__form div {
-  flex-basis: auto;
+.offer__top {
+  display: flex;
+  margin: 10px 0;
+}
+.offer__top div {
+  flex-basis: 50%;
   flex-grow: 1;
   flex-shrink: 1;
-  width: 100%;
 }
-.herous__form div input {
-  width: 100%;
-  background: unset;
-  border: solid 1px #fff;
-  padding: 0 5px;
-  font-size: 1.1em;
-  color: inherit;
+.offer__right p {
+  font-size: 1.2em;
+  display: block;
+  margin: 15px 0;
+  line-height: 1.5em;
 }
-.herous__form div input::placeholder {
-  opacity: 0.7;
-  color: #fff;
+.offer__right b {
+  font-weight: 500;
 }
-.form__button {
-  text-align: left;
+.offer__right strong {
+  font-weight: 500;
+  display: block;
+  margin: 15px 0;
 }
-.form__button .button {
-  width: unset;
-  margin-left: 1em;
+.offer__right button {
   background: #fff;
+  border: 1px solid #119ff7;
   color: #119ff7;
-  background: #fff;
-  font-size: 1em;
-  padding: 0 20px;
-  transition: color 0.5s, background 0.5s;
 }
-.form__button .button:hover {
-  background: #df3040;
-  color: #fff;
-  border: transparent;
+.offer__right button:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #119ff7;
+  width: 100%;
+  height: 100%;
+  transition: top 1s;
 }
-@media screen and (max-width: 860px) {
-  .herous {
-    flex-wrap: wrap;
+.offer__right button:hover button:after:hover {
+  top: 0;
+}
+.offer__bottom {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 10px 0;
+}
+.offer__bottom__block {
+  margin: 5px 0;
+}
+.partfolio__text {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1200px) {
+  .offer__block .container {
     padding: 15px;
   }
-  .hero__text > h1 {
-    font-size: 2em;
-  }
-  .herous__right {
-    flex-grow: 5;
-  }
-  .herous__right form {
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
+}
+@media screen and (max-width: 768px) {
+  .offer__top {
+    flex-direction: column;
   }
 }
-@media screen and (max-width: 300px) {
-  .hero__text > h1,
-  .herous__right > h2 {
-    font-size: 1em;
+@media screen and (max-width: 510px) {
+  .offer__bottom {
+    grid-template-columns: auto;
   }
 }
