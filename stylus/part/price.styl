@@ -1,0 +1,39 @@
+.prices__blocks
+    display grid
+    grid-template-columns: auto auto
+    gap 5px
+
+.price__block
+    display flex
+    justify-content: center
+    align-items: center
+    
+.price__icon
+    flex-basis: 25%
+    img 
+        max-width: 100%;
+.price__text
+    text-align: center
+    flex-basis 50%
+
+.price__button
+    flex-basis 25%
+    button 
+        text-align: center;
+        margin: 0 auto;
+
+@media screen and (max-width: desktop)  /*1200px;*/
+    .prices
+        .container
+            padding: $padding-desktop
+
+@media screen and (max-width: mobile3) /*768px;*/  
+    .prices__blocks
+        grid-template-columns: auto;
+
+@media screen and (max-width: mobile)  /*360px;*/
+    .price__block
+        flex-wrap: wrap
+        
+    .price__icon, .price__text, .price__button
+        flex-basis 50%

@@ -1,0 +1,90 @@
+.offer
+    display flex
+    flex-direction: column
+
+.offer__portfolio
+    display flex
+    flex-direction: column
+
+.offer__top
+    display flex
+    margin:10px 0
+    div
+        flex-basis ( 100% / 2 );
+        flex-grow 1
+        flex-shrink: 1
+
+.offer__right
+    p
+        font-size: $p2
+        display: block
+        margin:15px 0
+        line-height: $p5
+
+    b 
+        font-weight: 500
+
+    strong
+        font-weight: 500
+        display: block
+        margin:15px 0
+
+    button
+        border 1px solid $blue
+        transition: color .3s
+        background: $white
+        font-weight 500
+        color $blue
+        
+        &:hover 
+            color white
+
+        &::after
+            content ""
+            position absolute
+            background $blue
+            left 0
+            top 100%
+            width 100%
+            height 100%
+            z-index -1
+            transition top .3s
+
+        &:hover::after 
+            top 0  
+
+.offer__bottom
+    display: grid
+    grid-template-columns: auto auto
+    margin: 10px 0 
+    gap 30px
+    
+.offer__bottom__block
+    margin 5px 0
+
+.partfolio__text
+    margin: 10px 0 
+    font-size:1.5em
+
+    strong
+        font-weight: 900
+        margin: 15px 0
+        display: block
+    p   
+        font-size: .7em
+
+
+@media screen and (max-width: desktop)  /*1200px;*/
+    .offer__block .container
+        padding: $padding-desktop;
+
+@media screen and (max-width: mobile3) /*768px;*/
+    .offer__top
+        flex-direction: column
+
+@media screen and (max-width: mobile2) /*510px;*/ 
+    .offer__bottom
+        grid-template-columns: auto
+
+
+    

@@ -1,0 +1,57 @@
+.reviews
+    background: $blue
+    position: relative;
+    top: -26px;
+    z-index: -1;
+
+    .container 
+        background: transparent
+
+.reviews__block
+    display flex
+    flex-direction: column
+
+.reviews__title
+    color $white
+
+.reviews__images    
+    display grid
+    grid-template-columns: auto auto auto auto auto auto auto auto
+    gap 16px
+
+.reviews__image
+    flex-grow 1
+    flex-basis: (100% / 10)
+    box-shadow: 10px 5px 5px $blueDark;
+    img     
+        max-width: 100%;
+    
+@media screen and (max-width: desktop)  /*1200px;*/
+    .reviews
+        .container
+            padding:$padding-desktop
+@media screen and (max-width: mobile5) /*1080px;*/  
+    .reviews__images    
+        grid-template-columns: auto auto auto auto auto auto auto auto     
+
+       
+
+@media screen and (max-width: mobile4) /*860px;*/  
+    .reviews__images    
+        grid-template-columns:auto auto auto auto auto auto
+
+@media screen and (max-width: mobile3) /*768px;*/  
+    .reviews__images    
+        grid-template-columns: auto auto auto auto
+
+@media screen and (max-width: mobile2) /*510px;*/  
+    .reviews
+        .container
+            padding:0;
+            
+    .reviews__images    
+        grid-template-columns: auto auto
+
+@media screen and (max-width: mobile1) /*480px;*/  
+    .reviews__images    
+        grid-template-columns: auto
