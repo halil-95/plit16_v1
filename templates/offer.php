@@ -46,51 +46,19 @@
                 </div>
             </div>
             <div class="offer__bottom">
-                <div class="offer__bottom__block">
-                    <div class="partfolio__image">
-                        <img src="dist/image/bg.jpg" title="some img" alt="sasa">
+                <?php for($i = 0; $i < 8; $i++):?>
+                    <div class="offer__bottom__block">
+                        <div class="partfolio__image">
+                            <img src="dist/image/bg.jpg" title="some img" alt="sasa">
+                        </div>
+                        <div class="partfolio__text"><strong>some text</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                                amet quod distinctio, quasi sequi fugiat asperiores alias tenetur explicabo
+                                provident,
+                                iure eius pariatur numquam tempora atque accusantium cumque ex repellendus.</p>
+                        </div>
                     </div>
-                    <div class="partfolio__text"><strong>some text</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                            amet quod distinctio, quasi sequi fugiat asperiores alias tenetur explicabo
-                            provident,
-                            iure eius pariatur numquam tempora atque accusantium cumque ex repellendus.</p>
-                    </div>
-                </div>
-                <div class="offer__bottom__block">
-                    <div class="partfolio__image">
-                        <img src="dist/image/bg.jpg" title="some img" alt="sasa">
-                    </div>
-                    <div class="partfolio__text"><strong>some text</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                            amet quod distinctio, quasi sequi fugiat asperiores alias tenetur explicabo
-                            provident,
-                            iure eius pariatur numquam tempora atque accusantium cumque ex repellendus.</p>
-                    </div>
-                </div>
-                <div class="offer__bottom__block">
-                    <div class="partfolio__image">
-                        <img src="dist/image/bg.jpg" title="some img" alt="sasa">
-                    </div>
-                    <div class="partfolio__text">
-                        <strong>some text</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                            amet quod distinctio, quasi sequi fugiat asperiores alias tenetur explicabo
-                            provident,
-                            iure eius pariatur numquam tempora atque accusantium cumque ex repellendus.</p>
-                    </div>
-                </div>
-                <div class="offer__bottom__block">
-                    <div class="partfolio__image">
-                        <img src="dist/image/bg.jpg" title="some img" alt="sasa">
-                    </div>
-                    <div class="partfolio__text"><strong>some text</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                            amet quod distinctio, quasi sequi fugiat asperiores alias tenetur explicabo
-                            provident,
-                            iure eius pariatur numquam tempora atque accusantium cumque ex repellendus.</p>
-                    </div>
-                </div>
+                <?php endfor?>
             </div>
         </div>
     </div>
