@@ -4,70 +4,16 @@
             <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
         </div>
         <div class="benefit__way way">
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
+            <?php for($i = 0; $i < 8; $i++):?>
+                <div class="way__list">
+                    <div class="way__list__icon">
+                        <span class="icon-add-image"></span>
+                    </div>
+                    <div class="way__list__subscribe">
+                        <p>Возможность производства любой длины, до 12 метров</p>
+                    </div>
                 </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
-                </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
-                </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
-                </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
-                </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
-                </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
-                </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
-            <div class="way__list">
-                <div class="way__list__icon">
-                    <span class="icon-add-image"></span>
-                </div>
-                <div class="way__list__subscribe">
-                    <p>Возможность производства любой длины, до 12 метров</p>
-                </div>
-            </div>
+            <?php endfor;?>
         </div>
     </div>
     <div class="squery">

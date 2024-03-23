@@ -9,6 +9,7 @@
     <meta name="codertime.site" content="plit7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- стили -->
+    <link rel="icon" href="dist/image/small/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="dist/font/goodPro/stylesheet.css">
     <link rel="stylesheet" href="dist/font/fontella/css/fontello.css">
     <link rel="stylesheet" href="node_modules/@fancyapps/ui/dist/fancybox/fancybox.css">
