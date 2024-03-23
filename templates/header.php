@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="dist/font/goodPro/stylesheet.css">
     <link rel="stylesheet" href="dist/font/fontella/css/fontello.css">
     <link rel="stylesheet" href="node_modules/@fancyapps/ui/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
     <title
         title="a one-page landing site created on the basis of another site; this site focused on the portfolio and minimized errors">
         codertime.site created on the basis of another site</title>
