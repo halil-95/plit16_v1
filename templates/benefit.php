@@ -72,7 +72,7 @@
     </div>
     <div class="squery">
         <div class="container">
-            <img src="/dist/image/svg/triangle.svg" title="some img" alt="some text">
+            <img src="dist/image/svg/triangle.svg" title="some img" alt="some text">
         </div>
     </div>
 </section>
